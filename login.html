@@ -30,10 +30,10 @@ passnum=i;
 }
 }
 if((pass*12672-17)%3027==password[passnum]){
-alert("»¶Ó­"+user+"£¡");
+alert("æ¬¢è¿/Welcome"+user+"ï¼/!");
 setCookie("username",user,365);
 window.location.replace("index.html")
-}else{alert("ÕËºÅ»òÃÜÂë´íÎó£¡");}
+}else{alert("è´¦å·æˆ–å¯†ç é”™è¯¯ï¼/Wrong password or username!");}
 }
 </script>
 		<link rel="stylesheet" type="text/css" href="style.css">
@@ -52,22 +52,22 @@ window.location.replace("index.html")
 				<div id="h_select">
 					<div id="home">
 							<a href="index.html">
-							<p>Ö÷Ò³</p></a>
+							<p>ä¸»é¡µ/home page</p></a>
 						</div>
 					
-					<div id="login"><a href="login.html">µÇÂ¼</a></div>
+					<div id="login"><a href="login.html">ç™»å½•/login</a></div>
 				</div>
 			</div>
 		</div>
 
 
 		<div id='logindiv'>
-        <p>-----ÇëµÇÂ¼-----</p>
-        <p>ÕËºÅ</p>
+        <p>-----è¯·ç™»å½•/login-----</p>
+        <p>è´¦å·/username</p>
         <input id='zh' name='zh'type='text'/>
-        <p>ÃÜÂë</p>
+        <p>å¯†ç /password</p>
         <input id='password' type='password' />
-        <button onclick='javascript:login()'>µÇÂ¼</button><br/><br/>
+        <button onclick='javascript:login()'>ç™»å½•/submit</button><br/><br/>
          </div>
 
 
