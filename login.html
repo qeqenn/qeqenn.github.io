@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<title>ShunBoiu</title>
+
+<script src="main.js"></script>
+<script src="userandpassword.js"></script>
+<script>
+
+
+function setCookie(cname,cvalue,exdays)
+{
+  var d = new Date();
+  d.setTime(d.getTime()+(exdays*24*60*60*1000));
+  var expires = "expires="+d.toGMTString();
+  document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+
+	function login(){
+var pass;
+var passnum;
+var user;
+user=document.getElementById("zh").value;
+pass=document.getElementById("password").value;
+
+for(var i=0;i<=256;i++){
+if(username[i]==user){
+passnum=i;
+}
+}
+if((pass*12672-17)%3027==password[passnum]){
+alert("»¶Ó­"+user+"£¡");
+setCookie("username",user,365);
+window.location.replace("index.html")
+}else{alert("ÕËºÅ»òÃÜÂë´íÎó£¡");}
+}
+</script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style>
+			#login{
+				background-color:#b1b3b8;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<div id="h_u">
+				<h1><i class="coloredtitle">S</i> hun<i class="coloredtitle">B</i> oiu<h1>
+			</div>
+				<div id="h_select">
+					<div id="home">
+							<a href="index.html">
+							<p>Ö÷Ò³</p></a>
+						</div>
+					
+					<div id="login"><a href="login.html">µÇÂ¼</a></div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id='logindiv'>
+        <p>-----ÇëµÇÂ¼-----</p>
+        <p>ÕËºÅ</p>
+        <input id='zh' name='zh'type='text'/>
+        <p>ÃÜÂë</p>
+        <input id='password' type='password' />
+        <button onclick='javascript:login()'>µÇÂ¼</button><br/><br/>
+         </div>
+
+
+
+		<div id="footer">
+			<p>Copyright yuye.Wan</p>
+		</div>
+	</body>
+</html>

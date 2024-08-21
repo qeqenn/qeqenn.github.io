@@ -1,0 +1,42 @@
+#header {
+    background-color:#fdfcf8;
+    color:white;
+    padding:5px;
+}
+#h_u{
+	text-align:left;
+	color:black;
+}
+#h_select{
+	background-color:black;
+	height:40px;
+	display:flex;
+	text-align:center;
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+.coloredtitle{
+	color:red;
+}
+a{
+color:white;
+white-space: nowrap;
+}
+#home{
+width:100px;
+height:100%;
+}
+#login{
+
+width:100px;
+height:100%;
+}
+#logindiv{
+background-color:yellow;
+
+}
