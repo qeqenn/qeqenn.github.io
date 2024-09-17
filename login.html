@@ -5,6 +5,7 @@
 
 <script src="main.js"></script>
 <script src="userandpassword.js"></script>
+<script src="md5.js"></script>
 <script>
 
 
@@ -29,11 +30,23 @@ if(username[i]==user){
 passnum=i;
 }
 }
-if((pass*12672-17)%3027==password[passnum]){
+if(hex_md5(pass)==password[passnum]){
 alert("欢迎/Welcome"+user+"！/!");
 setCookie("username",user,365);
 window.location.replace("index.html")
 }else{alert("账号或密码错误！/Wrong password or username!");}
+}
+
+
+
+
+
+function regist(){
+var newacc = document.getElementById("zh").value;
+var newpas = hex_md5(document.getElementById("password").value);
+var mttext;
+mttext="mailto:3607808291@qq.com?subject=Shunboiu_Register&body=Acc%2F"+newacc+"%2Fpass%2F"+newpas+"%2F";
+window.location.replace(mttext);
 }
 </script>
 		<link rel="stylesheet" type="text/css" href="style.css">
@@ -42,6 +55,7 @@ window.location.replace("index.html")
 				background-color:#b1b3b8;
 				
 			}
+.regist{color:black}
 		</style>
 	</head>
 	<body>
@@ -52,7 +66,7 @@ window.location.replace("index.html")
 				<div id="h_select">
 					<div id="home">
 							<a href="index.html">
-							<p>主页/home page</p></a>
+							<p>主页/homepage</p></a>
 						</div>
 					
 					<div id="login"><a href="login.html">登录/login</a></div>
@@ -66,10 +80,10 @@ window.location.replace("index.html")
         <p>账号/username</p>
         <input id='zh' name='zh'type='text'/>
         <p>密码/password</p>
-        <input id='password' type='password' />
-        <button onclick='javascript:login()'>登录/submit</button><br/><br/>
+        <input id='password' type='password' /><br/>
+        <button onclick='javascript:login()'>登录/submit</button><button onclick='javascript:regist()'>注册/register</button><br/><br/>
 	<br/>
-	<a href="mailto:3607808291@qq.com">No account?</a>
+	
          </div>
 
 
