@@ -15,7 +15,12 @@ applocation[0]="apps\\sbword\\sbword.html";
 appname[1]="Scenzid Maghned OS";
 appverson[1]="V 1.0";
 appicon[1]="https:\\\\qeqenn.github.io\\SM-OS\\Start.png";
-applocation[1]="https:\\\\qeqenn.github.io\\SM-OS\\";
+applocation[1]="https://qeqenn.github.io//SM-OS/";
+
+appname[2]="railway surfers";
+appverson[2]="V 1.0.2.25";
+appicon[2]="https://img.itch.zone/aW1nLzE0OTkzNjAyLnBuZw==/315x250%23c/yJknam.png";
+applocation[2]="https://qeqen.itch.io/railway-surfers/";
 
 
 
