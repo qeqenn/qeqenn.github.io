@@ -1,1 +1,66 @@
-<p>开发中</p>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="..\..\style.css">
+<style>
+.savebtn{
+width:100px;
+height:100px;
+</style>
+<script>
+function save(){
+var editarea = document.getElementById("edit");
+var savearea = document.getElementById("save");
+editarea.style.display="none";
+savearea.style.display="inline";
+
+}
+
+function cancel(){
+var editarea = document.getElementById("edit");
+var savearea = document.getElementById("save");
+editarea.style.display="block";
+savearea.style.display="none";
+
+}
+
+function download(){ 
+    var text = document.getElementById("words").value; //要保存的内容
+	var editarea = document.getElementById("edit");
+	var savearea = document.getElementById("save");
+var filename = document.getElementById("filename").value;
+    if(text==""){
+        alert("没有内容可保存！");
+editarea.style.display="block";
+savearea.style.display="none";
+        return;
+    }
+    var blob = new Blob([text], { type: "text/plain"}); 
+    var anchor = document.createElement("a"); 
+    anchor.download = filename+".txt"; 
+    anchor.href = window.URL.createObjectURL(blob); 
+    anchor.target ="_blank"; 
+    anchor.style.display = "none"; // just to be safe! 
+    document.body.appendChild(anchor); 
+    anchor.click(); 
+    document.body.removeChild(anchor); 
+} 
+</script>
+</head>
+<body>
+<h1><i class="coloredtitle">S</i> hun<i class="coloredtitle">B</i> oiu <i class="coloredtitle2">Word</i></h1>
+<a href="..\..\index.html" style="color:red">返回主页Go back to home page</a>
+<div id="edit">
+<button class="savebtn" onclick="javascript:save()">保存<br/>save</button>
+<textarea id="words" rows="50%" cols="80%" placeholder="请输入文本...
+input anything..."></textarea>
+</div>
+<div id="save" style="display:none">
+<p>文件名filename:</p>
+<input id="filename"/>
+<br/>
+<button class="savebtn" onclick="javascript:download()">保存<br/>save</button>
+<button class="savebtn" onclick="javascript:cancel()">取消<br/>cancel</button>
+</div>
+</body>
+</html>
