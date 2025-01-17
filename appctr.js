@@ -12,10 +12,10 @@ appverson[0]="V 1.0";
 appicon[0]="apps\\sbword\\sbword.bmp";
 applocation[0]="apps\\sbword\\sbword.html";
 
-appname[0]="Scenzid Maghned OS";
-appverson[0]="V 1.0";
-appicon[0]="https:\\\\qeqenn.github.io\\SM-OS\\Start.png";
-applocation[0]="https:\\\\qeqenn.github.io\\SM-OS\\";
+appname[1]="Scenzid Maghned OS";
+appverson[1]="V 1.0";
+appicon[1]="https:\\\\qeqenn.github.io\\SM-OS\\Start.png";
+applocation[1]="https:\\\\qeqenn.github.io\\SM-OS\\";
 
 
 
