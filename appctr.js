@@ -39,11 +39,11 @@ function refreshapp(){
 
 function nextapp(){
 	if(nowapp >= apps){
-		apps = 0;
+		nowapp = 0;
 	}
 	else
 	{
-		apps += 1;
+		nowapp += 1;
 	}
 refreshapp();
 }
