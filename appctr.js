@@ -14,7 +14,7 @@ applocation[0]="apps\\sbword\\sbword.html";
 
 appname[0]="Scenzid Maghned OS";
 appverson[0]="V 1.0";
-appicon[0]="https:\\\\qeqenn.github.io\\SM-OS\\logo.png";
+appicon[0]="https:\\\\qeqenn.github.io\\SM-OS\\Start.png";
 applocation[0]="https:\\\\qeqenn.github.io\\SM-OS\\";
 
 
