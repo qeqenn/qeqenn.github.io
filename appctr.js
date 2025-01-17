@@ -1,4 +1,4 @@
-var apps=1;
+var apps=2;
 var nowapp=0;
 var appname=new Array(256);
 var appverson=new Array(256);
